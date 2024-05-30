@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="img/logo.png" alt="Atlantis Logo">
+        </a>
+        <h1>Atlantis</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="products.html">Продукция</a></li>
+            <li><a href="vacancies.html">Вакансии</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h1>СВЯЖИТЕСЬ С НАМИ</h1>
+                <p>Контакты</p>
+                <p>238460, Россия, Калининградская обл.,<br>Багратионовский р-н, пос. Совхозное, ул. Победы, 1</p>
+            </div>
+            <div class="contact-right">
+                <a href="#" class="contact-btn" id="mapBtn">Показать на карте</a>
+
+<div id="mapModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2281.1186310459514!2d20.175996287831198!3d54.574395657439936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46f70b76297028c5%3A0x1f89bbd41c5cf24e!2z0JrQsNC90LXQu9C10Lkg0LrQsNGA0YLQvtGA0L7Qs9GA0LDQtA!5e0!3m2!1sru!2sru!4v1642113613663!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+  </div>
+</div>
+
+<script>
+// Получаем элементы модального окна и кнопку открытия
+var modal = document.getElementById('mapModal');
+var mapBtn = document.getElementById("mapBtn");
+var closeBtn = document.getElementsByClassName("close")[0];
+
+// Открываем модальное окно при клике на кнопку
+mapBtn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Закрываем модальное окно при клике на крестик
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Закрываем модальное окно при клике вне окна
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <div id="contact-section" class="contact-container">
+
+        <div class="contact-row">
+          <div class="contact-info">
+            <h2>ОТДЕЛ</h2>
+            <p> ПРОДАЖ</p>
+          </div>
+          <div class="contact-info">
+            <h2>Номер телефона</h2>
+            <p>+7 401 25-702-56</p>
+          </div>
+          <div class="contact-info">
+            <h2>Почта</h2>
+            <p>sales@atlantis-company.com</p>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <div class="contact-info">
+            <h2>ОТДЕЛ</h2>
+            <p>ЗАКУПОК</p>
+          </div>
+          <div class="contact-info">
+            <h2>Номер телефона</h2>
+            <p>+7 401 25-702-59</p>
+          </div>
+          <div class="contact-info">
+            <h2>Почта</h2>
+            <p>a.markosyan@atlantis-company.com</p>
+          </div>
+        </div>
+        
+        <div class="contact-row">
+            <div class="contact-info">
+              <h2>ОФИС</h2>
+              <p>МЕНЕДЖЕР</p>
+            </div>
+            <div class="contact-info">
+              <h2>Номер телефона</h2>
+              <p>+7 401 25-702-57</p>
+            </div>
+            <div class="contact-info">
+              <h2>Почта</h2>
+              <p>office@atlantis-company.com</p>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-info">
+              <h2>ОТДЕЛ</h2>
+              <p>КАЧЕСТВА</p>
+            </div>
+            <div class="contact-info">
+              <h2>Номер телефона</h2>
+              <p>+7 401 25-702-71</p>
+            </div>
+            <div class="contact-info">
+              <h2>Почта</h2>
+              <p>o.parshukova@atlantis-company.com</p>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-info">
+              <h2>ОТДЕЛ</h2>
+              <p>ЛОГИСТИКИ</p>
+            </div>
+            <div class="contact-info">
+              <h2>Номер телефона</h2>
+              <p>+7 401 25-702-79</p>
+            </div>
+            <div class="contact-info">
+              <h2>Почта</h2>
+              <p>v.mamonko@mukomol39.ru</p>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-info">
+              <h2>ОТДЕЛ</h2>
+              <p>КАДРОВ</p>
+            </div>
+            <div class="contact-info">
+              <h2>Номер телефона</h2>
+              <p>+7 401 25-702-58</p>
+            </div>
+            <div class="contact-info">
+              <h2>Почта</h2>
+              <p>s.mitrofanova@atlantis-company.com</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="contact-section-new" id="contact-section">
+        <div class="contact-left-new">
+          <h1>СВЯЖИТЕСЬ С НАМИ</h1>
+          <button class="round-button-new" id="locationBtnNew">ОТДЕЛЫ</button>
+          <div class="tooltip-new" id="locationTooltipNew">238460, РОССИЯ, КАЛИНИНГРАДСКАЯ ОБЛ., БАГРАТИОНОВСКИЙ Р-Н, ПОС. СОВХОЗНОЕ, УЛ. ПОБЕДЫ, 1</div>
+        </div>
+        <div class="contact-right-new">
+          <form id="contactFormNew">
+            <input type="text" id="userNameNew" placeholder="ФИО" required>
+            <input type="tel" id="userPhoneNew" placeholder="Телефон" required>
+            <textarea id="userMessageNew" placeholder="Сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="other-section">
+        <!-- Другие секции вашего сайта -->
+      </div>
+      
+      <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Обработчик клика по кнопке "Мы тут"
+        document.getElementById('locationBtnNew').addEventListener('click', function() {
+          // Получаем блок контактов
+          var contactSection = document.getElementById('contact-section');
+          // Прокручиваем к блоку контактов
+          contactSection.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+      </script>
+      
+      <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Получаем форму
+        var form = document.getElementById('contactFormNew');
+        
+        // Добавляем обработчик события для отправки формы
+        form.addEventListener('submit', function(event) {
+          // Получаем значения из полей формы
+          var userName = document.getElementById('userNameNew').value;
+          var userPhone = document.getElementById('userPhoneNew').value;
+          var userMessage = document.getElementById('userMessageNew').value;
+          
+          // Создаем текст для экспорта
+          var exportText = 'ФИО: ' + userName + '\nТелефон: ' + userPhone + '\nСообщение: ' + userMessage;
+          
+          // Создаем элемент <a> для скачивания файла
+          var link = document.createElement('a');
+          link.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(exportText);
+          link.download = 'contact_info.txt';
+          
+          // Добавляем элемент в DOM и эмулируем клик
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          
+          // Предотвращаем стандартное поведение формы
+          event.preventDefault();
+        });
+      });
+      </script>
+      </div>
+
+      <div id="popupBackground" class="popup-background">
+        <div id="popupForm" class="popup-form">
+          <span id="closePopup" class="close-popup">&times;</span>
+          <h2>ЗАПОЛНИТЕ ФОРМУ И МЫ С ВАМИ СВЯЖЕМСЯ</h2>
+          <form id="popupContactForm">
+            <input type="text" id="popupUserName" placeholder="ФИО" required>
+            <input type="tel" id="popupUserPhone" placeholder="Телефон" required>
+            <textarea id="popupUserMessage" placeholder="Сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+      
+      <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var popupBackground = document.getElementById('popupBackground');
+        var popupForm = document.getElementById('popupForm');
+        var closePopup = document.getElementById('closePopup');
+        var popupContactForm = document.getElementById('popupContactForm');
+        var formOpened = false; // Переменная для отслеживания состояния формы
+      
+        // Открываем форму при прокрутке до середины страницы
+        window.addEventListener('scroll', function() {
+          var windowHeight = window.innerHeight;
+          var scrollY = window.scrollY || window.pageYOffset;
+          var scrollThreshold = windowHeight / 2;
+      
+          if (scrollY >= scrollThreshold && !formOpened) {
+            popupBackground.style.display = 'block';
+            setTimeout(function() {
+              popupForm.style.opacity = '1';
+              popupForm.style.transform = 'translate(-50%, -50%) scale(1)';
+              document.body.style.overflow = 'hidden'; // Блокируем прокрутку
+            }, 100);
+            formOpened = true; // Устанавливаем переменную в true, чтобы форма открылась только один раз
+          }
+        });
+      
+        // Закрываем форму при клике на крестик
+        closePopup.addEventListener('click', function() {
+          popupForm.style.opacity = '0';
+          popupForm.style.transform = 'translate(-50%, -50%) scale(0.5)';
+          popupBackground.style.display = 'none';
+          document.body.style.overflow = 'auto'; // Разблокируем прокрутку
+        });
+      
+        // Закрываем форму при отправке
+        popupContactForm.addEventListener('submit', function(event) {
+          // Обработка отправки формы
+          event.preventDefault();
+          popupForm.style.opacity = '0';
+          popupForm.style.transform = 'translate(-50%, -50%) scale(0.5)';
+          popupBackground.style.display = 'none';
+          document.body.style.overflow = 'auto'; // Разблокируем прокрутку
+      
+          // Собираем данные из формы
+          var userName = document.getElementById('popupUserName').value;
+          var userPhone = document.getElementById('popupUserPhone').value;
+          var userMessage = document.getElementById('popupUserMessage').value;
+      
+          // Создаем текстовый файл с данными
+          var data = 'ФИО: ' + userName + '\nТелефон: ' + userPhone + '\nСообщение: ' + userMessage;
+          var blob = new Blob([data], { type: 'text/plain' });
+          var url = URL.createObjectURL(blob);
+      
+          // Создаем ссылку для скачивания файла
+          var link = document.createElement('a');
+          link.href = url;
+          link.download = 'contact_info.txt';
+          link.click();
+      
+          // Освобождаем ресурсы
+          URL.revokeObjectURL(url);
+        });
+      });
+      </script>
+
+<footer class="footer">
+  <div class="container">
+
+      <div class="dropdown">
+          <button class="dropbtn">О нас</button>
+          <div class="dropdown-content">
+              <a href="#" onclick="openVK()">ВК</a>
+              <a href="#" onclick="open2g()">2GIS</a>
+          </div>
+      </div>
+
+      <div class="footer-left">
+          <a href="contacts.html">Контакты</a>
+          <a href="products.html">Продукция</a>
+          <a href="vacancies.html">Вакансии</a>
+      </div>
+      <div class="footer-right">
+          <p>ОТДЕЛ ПРОДАЖ<br>+7 (4012) 57-02-56</p>
+          <p>238460, Россия, Калининградская обл.,<br>Багратионовский р-н, пос. Совхозное, ул. Победы, 1</p>
+      </div>
+  </div>
+
+  <script>
+      // Функция для открытия ВК в новой вкладке
+      function openVK() {
+          window.open("https://vk.com/public186242141?ysclid=lw54lt1oim256160976", "_blank");
+      }
+      function open2g() {
+          window.open("https://2gis.ru/kaliningrad/firm/70000001054496723", "_blank");
+      }
+  </script>
+
+</footer>
+</body>
+</html>

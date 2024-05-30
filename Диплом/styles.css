@@ -1,0 +1,927 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #f0f0f0; /* светлосерый фон */
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 5%;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* цвет текста кнопок */
+    border: 1px solid #333; /* рамка кнопок */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* анимация при наведении */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease; /* анимация при наведении */
+}
+
+.logo img {
+    max-height: 50px; /* максимальная высота для логотипа */
+    margin-right: 10px; /* отступ между логотипом и текстом */
+}
+
+.logo h1 {
+    margin: 0;
+    font-weight: bold; /* делаем заголовок жирным */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* увеличение при наведении */
+}
+
+nav ul li a:hover {
+    background-color: #333; /* изменение цвета при наведении */
+    color: #fff; /* изменение цвета текста при наведении */
+}
+
+.welcome-section {
+    position: relative;
+    height: 100vh; /* Занимает всю высоту окна просмотра */
+    overflow: hidden; /* Скрытие части видео, выходящей за пределы блока */
+}
+
+.welcome-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Заполнение видео блока */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 10%; /* Отступ слева */
+    transform: translateY(-50%);
+    color: #fff;
+    z-index: 1; /* Помещаем текст поверх видео */
+    
+}
+
+.text-overlay h2 {
+    font-size: 2.5em; /* Размер заголовка */
+    font-weight: bold;
+}
+
+.text-overlay p {
+    font-size: 1.5em; /* Размер текста */
+    font-weight: normal;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #389dd8;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4fcaff;
+    scale: 1.1;
+}
+
+/* Ваши стили здесь */
+
+.about-section {
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Цвет фона блока */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-left {
+    flex: 1;
+    padding-right: 70px;
+}
+
+.about-right {
+    flex: 1;
+}
+
+.about-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+.advantages-section {
+    background-image: url('img/2.jpg'); /* задний фон */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0; /* добавляем внутренний отступ */
+    color: #fff; /* цвет текста */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.advantages-left {
+    flex: 1;
+    padding-right: 20px; /* добавляем отступ справа */
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 25); /* Добавляем тень тексту */
+}
+
+.advantages-right {
+    flex: 1;
+    
+}
+
+.info-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-box p {
+    color: #333;
+}
+
+.facts-section {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.fact {
+    flex-basis: calc(25% - 20px); /* Для создания четырех столбцов */
+    text-align: center;
+}
+
+.fact img {
+    border-radius: 20px; /* Более внушительные закругленные углы */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Тень */
+    transition: transform 0.3s ease; /* Анимация */
+    width: 100%; /* Занимать всю ширину родительского элемента */
+    height: auto; /* Автоматическая высота для поддержки пропорций */
+    display: block; /* Для избежания нежелательных отступов */
+}
+
+.fact p {
+    margin-top: 20px;
+}
+
+.fact:hover img {
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
+.fact:hover p {
+    color: #ff7f0e; /* Изменение цвета текста при наведении */
+}
+
+.footer {
+    background-color: #333; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 20px 0; /* Внутренние отступы */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column; /* Размещаем кнопки по вертикали */
+    align-items: center; /* Выравниваем по центру */
+}
+
+.footer-left a {
+    color: #fff; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    margin-bottom: 10px; /* Отступ между кнопками */
+    transition: color 0.3s ease; /* Анимация изменения цвета текста */
+}
+
+.footer-left a:hover {
+    color: #ff7f0e; /* Изменяем цвет текста при наведении */
+}
+
+.footer-middle {
+    text-align: center; /* Выравнивание логотипа по центру */
+}
+
+.footer-middle img {
+    width: 100px; /* Размер логотипа */
+    height: auto;
+}
+
+.footer-right {
+    text-align: right; /* Выравнивание текста по правому краю */
+}
+
+.footer-right p {
+    margin: 0 0 10px; /* Нижний отступ между абзацами */
+}
+
+
+
+
+/* КОНТАКТЫ */
+
+
+
+
+
+
+.contact-section {
+    background-image: url('img/bg.jpg'); /* Задний фон изображением */
+    background-size: cover;
+    color: #fff; /* Цвет текста */
+    padding: 100px 0; /* Внутренние отступы */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-left {
+    flex: 1;
+}
+
+.contact-right {
+    margin-left: 50px; /* Отступ слева для правого блока */
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff; /* Цвет кнопки */
+    color: #fff; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Анимация изменения цвета фона */
+}
+
+.contact-btn:hover {
+    background-color: #0ab6ff; /* Изменение цвета фона при наведении */
+    transform: scale(1.1);
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .contact-row {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    width: 30%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 10px; /* добавляем отступы между блоками */
+    box-sizing: border-box; /* учитываем padding и border в расчете ширины блока */
+  }
+  
+  .contact-info h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+
+  /* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+  .contact-section-new {
+    background-image: url('img/tut.jpg'); /* Путь к вашему изображению */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between; /* Изменено с "flex-start" на "space-between" */
+    align-items: center;
+    padding: 0 20px; /* Добавлено для отступов */
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .contact-left-new {
+    text-align: center;
+    color: white;
+  }
+  
+  .contact-left-new h1 {
+    font-size: 3em;
+  }
+  
+  .round-button-new {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .round-button-new:hover {
+    transform: scale(1.1);
+  }
+  
+  .tooltip-new {
+    display: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .contact-right-new {
+    flex: 1;
+    margin-left: 20px; /* Добавлен отступ слева */
+  }
+  
+  #contactFormNew {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: slideInRight 1s ease forwards;
+  }
+  
+  #contactFormNew input,
+  #contactFormNew textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #contactFormNew button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #contactFormNew button:hover {
+    background-color: #0056b3;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .contact-right-new {
+    flex: 1;
+    margin-left: 20px;
+    padding: 20px; /* Добавляем отступы внутри блока формы */
+  }
+  
+  #contactFormNew {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: slideInRight 1s ease forwards;
+  }
+  
+  #contactFormNew input,
+  #contactFormNew textarea {
+    width: calc(100% - 40px); /* Ширина поля с учётом отступов */
+    margin: 10px; /* Отступы вокруг полей */
+    padding: 10px; /* Отступы внутри полей */
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box; /* Учитываем отступы в общей ширине */
+  }
+  
+  #contactFormNew button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Отступ сверху для кнопки */
+  }
+  
+  #contactFormNew button:hover {
+    background-color: #0056b3;
+  }
+
+  .popup-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .popup-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    transition: all 0.3s ease;
+    max-width: 80%; /* Максимальная ширина формы */
+    overflow-y: auto; /* Добавление прокрутки при длинных формах */
+    display: grid; /* Используем сетку для элементов внутри формы */
+    grid-template-columns: 1fr; /* Одинаковые колонки */
+    grid-gap: 20px; /* Отступы между элементами */
+  }
+  
+  .popup-form h2 {
+    margin-top: 1;
+  }
+  
+  .popup-form input,
+  .popup-form textarea {
+    margin-bottom: 20px; /* Добавляем отступ между элементами ФИО, номером телефона и сообщением */
+  }
+  
+  .popup-form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .popup-form input[type="text"],
+  .popup-form input[type="tel"],
+  .popup-form textarea {
+    margin-bottom: 20px; /* Отступ между элементами */
+    width: calc(100% - 20px); /* Ширина полей для ввода с учетом отступов */
+    padding: 10px; /* Поля ввода */
+    border: 1px solid #ccc; /* Граница полей ввода */
+    border-radius: 5px; /* Скругление углов полей ввода */
+    box-sizing: border-box; /* Учитываем padding и border в общей ширине */
+    transition: border-color 0.3s ease; /* Плавное изменение цвета границы */
+  }
+  
+  .popup-form input[type="text"]:focus,
+  .popup-form input[type="tel"]:focus,
+  .popup-form textarea:focus {
+    border-color: #007bff; /* Изменение цвета границы при фокусе */
+  }
+  
+  .popup-form textarea {
+    height: 150px; /* Высота textarea */
+    resize: none; /* Запрет изменения размера textarea */
+  }
+  
+  .popup-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .popup-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ccc;
+  }
+
+  .new3-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.new3-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.new3-menu-item {
+    flex-basis: 18%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.new3-menu-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.new3-menu-item img {
+    width: 100%;
+    height: auto;
+}
+
+.new3-menu-item-text {
+    padding: 20px;
+    text-align: center;
+
+    transition: opacity 0.3s ease;
+}
+
+.new3-menu-item:hover .new3-menu-item-text {
+    opacity: 1;
+}
+
+
+.new3-info-section {
+    background-color: #f2f2f2;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden; /* чтобы изображение не выходило за пределы блока */
+}
+
+.new3-info-content {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.new3-info-content.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.new3-info-image {
+    flex: 1; /* занимает половину ширины блока */
+}
+
+.new3-info-image img {
+    width: 100%;
+    height: auto;
+}
+
+.new3-info-text {
+    flex: 1; /* занимает половину ширины блока */
+    padding: 20px; /* отступы между текстом и краями блока */
+}
+
+.new3-info-text h2 {
+    margin-top: 0; /* убираем верхний отступ у заголовка */
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.animated-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: pulse 2s infinite alternate ease-in-out; /* Анимация */
+}
+
+/* Анимация изменения размера */
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
+.animated-button:hover {
+  background-color: #0056b3;
+  animation: none; /* Остановка анимации при наведении */
+}
+
+.animated-button.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.new5-intro-block {
+  background-image: url('img/bgv.jpg'); /* Путь к изображению */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new5-content {
+  color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Отступы слева и справа */
+}
+
+.text5 {
+  flex: 1;
+  margin-right: 20px; /* Отступ справа */
+}
+
+.text5 h1 {
+  margin-top: 0;
+}
+
+.new5-button {
+  display: inline-block;
+  padding: 10px 100px;
+  margin-left: 150px;
+  background-color: #2d91dd;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Добавлено свойство transform для анимации */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.new5-button:hover {
+  background-color: #1276b9;
+  transform: scale(1.1); /* Анимация при наведении */
+}
+
+.new5-vacs-block {
+  display: flex;
+}
+
+.new5-vacancy {
+  flex: 1;
+  margin-right: 20px; /* Отступ между слайдерами */
+}
+
+.new5-slider {
+  height: 30vh; /* Размер слайдера - 30% от высоты экрана */
+  overflow: hidden;
+}
+
+.new5-slide {
+  display: flex;
+}
+
+.new5-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Стили для текста в рамке */
+.new5-vacancy-info {
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+
+.new5-vacancy-info h2 {
+  margin-top: 0;
+}
+
+.new5-vacancy-info p {
+  margin-bottom: 0;
+}
+
+.NEW7container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.NEW7block {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+.NEW7block-header {
+  padding: 30px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+.NEW7block-content {
+  padding: 30px;
+  display: none;
+  animation: fadeIn 0.5s ease; /* Добавляем анимацию появления */
+  
+}
+
+.NEW7details {
+  display: flex;
+  flex-wrap: wrap; /* Добавляем перенос на новую строку для блоков деталей */
+  justify-content: space-between;
+}
+
+.NEW7detail {
+  flex-basis: calc(33.33% - 20px); /* Устанавливаем ширину блока деталей с учетом отступов */
+  text-align: center;
+  margin-bottom: 20px; /* Добавляем отступ между блоками деталей */
+}
+
+.NEW7detail h3 {
+  margin-bottom: 10px;
+}
+
+.NEW7toggle-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.NEW7toggle-button:hover {
+  background-color: #0056b3;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+  top: auto;
+  bottom: 100%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 8px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #007bff;
+}
+
+.dropbtn {
+  background-color: #007bff;
+  color: white;
+  padding: 14px 100px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+}
